@@ -22,5 +22,5 @@ jobs:
       # Instala surge y hace el deploy
       - name: Instalar Surge y Desplegar
         run: |
-          npm install -g surge
+          npm install surge
           surge . ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
